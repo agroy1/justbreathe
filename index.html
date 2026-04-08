@@ -237,7 +237,7 @@
       </div>
       <label id="timer-toggle-wrapper">
         <input type="checkbox" id="timer-toggle" checked>
-        <span id="timer-toggle-text">Hide time</span>
+        <span id="timer-toggle-text">Show Remaining Time</span>
       </label>
     </div>
     
@@ -606,7 +606,7 @@
       const isChecked = DOM.timerToggle.checked;
       DOM.timerDisplay.style.display = isChecked ? 'block' : 'none';
       DOM.timerAdjustControls.style.display = isChecked ? 'flex' : 'none';
-      DOM.timerToggleText.innerText = isChecked ? 'Hide time' : 'Show time';
+      DOM.timerToggleText.innerText = isChecked ? 'Show Remaining Time' : 'Show Remaining Time';
     }
 
     DOM.timerToggle.addEventListener('change', () => {
